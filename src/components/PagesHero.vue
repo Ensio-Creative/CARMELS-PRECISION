@@ -25,7 +25,7 @@ defineProps({
 }
 @media (max-width: 600px) {
   .overtext {
-    left: 20%;
+    left: 25%;
   }
   .overlay,
   .img {

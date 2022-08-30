@@ -23,11 +23,10 @@ import PagesHero from "../components/PagesHero.vue";
           services.
         </div>
       </div>
-     
     </div>
     <div class="relative mb-20">
       <img src="../assets/about-capabilities.png" class="img w-full" alt="" />
-      <div class="absolute top-20 lg:right-20 right-4 left-4 bg-white p-8 lg:w-2/5">
+      <div class="absolute top-20 lg:right-20 lg:left-auto right-4 left-4 bg-white p-8 lg:w-2/5">
         <div class="font-bold text-3xl my-3">Capabilities</div>
         <div class="lg:text-lg text-[#555464]">
           Our engineering operations takes place over two sites in Ely and the

@@ -16,4 +16,14 @@ export default [
         name: 'About',
         component: () => import('../views/About.vue')
     },
+    {
+        path: '/markets',
+        name: 'Markets',
+        component: () => import('../views/Markets.vue')
+    },
+    {
+        path: '/services',
+        name: 'Services',
+        component: () => import('../views/Services.vue')
+    },
 ]
