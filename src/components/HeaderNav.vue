@@ -21,11 +21,21 @@ const close = () => {
     <img v-if="position < 550" src="../assets/logo.png" alt="" />
     <img v-else src="../assets/logo-color.png" alt="" />
     <div class="lg:flex justify-between w-96 my-auto hidden">
-      <div>Home</div>
-      <div>Company</div>
-      <div>Services</div>
-      <div>Markets</div>
-      <div>Contact us</div>
+      <router-link to="/">
+        <div>Home</div>
+      </router-link>
+      <router-link to="/about">
+        <div>Company</div>
+      </router-link>
+      <router-link to="/services">
+        <div>Services</div>
+      </router-link>
+      <router-link to="/markets">
+        <div>Markets</div>
+      </router-link>
+      <router-link to="/contact">
+        <div>Contact us</div>
+      </router-link>
     </div>
     <div class="lg:hidden block my-auto">
       <img @click="toggle" src="../assets/bar.png" alt="" />
@@ -43,11 +53,21 @@ const close = () => {
           />
         </div>
         <div class="p-4 font-bold text-[#0E1E43] text-3xl">
-          <div class="my-1">Home</div>
-          <div class="my-1">Company</div>
-          <div class="my-1">Services</div>
-          <div class="my-1">Markets</div>
-          <div class="my-1">Contact</div>
+          <router-link to="/">
+            <div @click="close" class="my-1">Home</div>
+          </router-link>
+          <router-link to="/about">
+            <div @click="close" class="my-1">Company</div>
+          </router-link>
+          <router-link to="/services">
+            <div @click="close" class="my-1">Services</div>
+          </router-link>
+          <router-link to="/markets">
+            <div @click="close" class="my-1">Markets</div>
+          </router-link>
+          <router-link to="/contact">
+            <div @click="close" class="my-1">Contact</div>
+          </router-link>
         </div>
         <div class="p-4 text-[#C3C3C3] relative bottom-0">
           <div>CNC Milling</div>

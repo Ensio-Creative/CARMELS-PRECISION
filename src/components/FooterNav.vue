@@ -19,10 +19,18 @@
         </div>
         <div class="lg:my-0 my-6">
           <div class="font-bold">COMPANY</div>
-          <div class="my-2">About us</div>
-          <div class="my-2">Services</div>
-          <div class="my-2">Markets</div>
-          <div class="my-2">Contact us</div>
+          <router-link to="/about">
+            <div class="my-2">About us</div>
+          </router-link>
+          <router-link to="/services">
+            <div class="my-2">Services</div>
+          </router-link>
+          <router-link to="/markets">
+            <div class="my-2">Markets</div>
+          </router-link>
+          <router-link to="/contact">
+            <div class="my-2">Contact us</div>
+          </router-link>
         </div>
         <div class="lg:my-0 my-6">
           <div class="font-bold">SERVICES</div>

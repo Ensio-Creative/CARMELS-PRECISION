@@ -29,7 +29,7 @@ defineProps({
   }
   .overlay,
   .img {
-    height: 70vh;
+    height: 65vh;
   }
 }
 </style>
