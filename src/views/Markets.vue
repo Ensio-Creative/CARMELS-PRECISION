@@ -35,7 +35,7 @@ const markets = [
 ];
 </script>
 <template>
-  <div>
+  <div class="lg:mb-20">
     <PagesHero img="markets.png" title="Markets" />
     <div class="bg-[#FFFEF2]">
       <div class="lg:w-2/3 mx-auto lg:text-2xl text-lg p-10 text-[#0E1E43] lg:p-20 text-center">
