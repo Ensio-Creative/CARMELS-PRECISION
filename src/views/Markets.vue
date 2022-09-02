@@ -38,13 +38,13 @@ const markets = [
   <div>
     <PagesHero img="markets.png" title="Markets" />
     <div class="bg-[#FFFEF2]">
-      <div class="lg:w-2/3 mx-auto lg:text-2xl text-sm p-10 text-[#0E1E43] lg:p-20 text-center">
+      <div class="lg:w-2/3 mx-auto lg:text-2xl text-lg p-10 text-[#0E1E43] lg:p-20 text-center">
         We supply products to a wide range of industry sectors. With a flexible
         and innovative approach, components are precision engineered to a very
         high quality, and at high capacities to meet demand.
       </div>
     </div>
-    <div class="lg:flex lg:m-20 m-4" v-for="(market, index) in markets" :key="index">
+    <div class="lg:flex lg:m-20 m-4 lg:my-4 my-8" v-for="(market, index) in markets" :key="index">
       <div class="lg:w-1/2 lg:order-last">
         <img :src="'/images/markets/' + market.img" alt="" />
       </div>

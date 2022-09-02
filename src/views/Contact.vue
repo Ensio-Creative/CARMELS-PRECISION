@@ -56,7 +56,7 @@ const handleFormSubmit = (e) => {
 
 <template>
   <div>
-    <div class="bg-[#0E1E43] text-white text-center lg:p-32 py-44 height">
+    <div class="bg-[#0E1E43] text-white text-center lg:p-44 py-44 height">
       <div class="lg:w-2/5 mx-auto">
         <div class="lg:text-8xl text-5xl font-bold">Contact</div>
         <div class="lg:px-0 px-8">
@@ -172,6 +172,12 @@ textarea:focus {
 @media (max-width: 600px) {
   .height {
     height: 65vh;
+  }
+  .mapouter {
+    width: 100%;
+  }
+  .gmap_canvas {
+    width: 100%;
   }
 }
 </style>

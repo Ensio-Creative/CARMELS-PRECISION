@@ -40,6 +40,9 @@ const close = () => {
     <div class="lg:hidden block my-auto">
       <img @click="toggle" src="../assets/bar.png" alt="" />
     </div>
+    <div v-if="position > 550" class="lg:hidden block my-auto">
+      <img @click="toggle" src="../assets/blue-bar.png" alt="" />
+    </div>
 
     <div id="myNav" class="overlay">
       <div class="overlay-content">

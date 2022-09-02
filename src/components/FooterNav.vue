@@ -7,17 +7,32 @@
         We are here to help.
       </div>
       <div>
-        <button class="bg-white p-3 w-44 rounded-sm text-[#0E1E43]">
-          TALK TO US
-        </button>
+        <router-link to="/contact">
+          <button class="bg-white p-3 w-44 rounded-sm text-[#0E1E43]">
+            TALK TO US
+          </button>
+        </router-link>
       </div>
     </div>
     <div class="lg:px-20 px-8">
-      <div class="py-20 lg:pb-20 pb-1 flex flex-wrap justify-between text-[#081637]">
+      <div
+        class="
+          py-20
+          lg:pb-20
+          pb-1
+          flex flex-wrap
+          justify-between
+          text-[#081637]
+        "
+      >
         <div class="lg:w-auto w-full">
-          <img src="../assets/logo-color.png" class="w-40 lg:mb-0 mb-10" alt="" />
+          <img
+            src="../assets/logo-color.png"
+            class="w-40 lg:mb-0 mb-10"
+            alt=""
+          />
         </div>
-        <div class="lg:my-0 my-6">
+        <div class="lg:my-0 my-6 lg:ml-20">
           <div class="font-bold">COMPANY</div>
           <router-link to="/about">
             <div class="my-2">About us</div>
@@ -58,7 +73,7 @@
           lg:text-auto
           text-center
           border-[#E9EBEC]
-          text-[#081637]
+          text-[#081637] text-sm
         "
       >
         <div>© 2022 Carmel’s Precision Limited.</div>

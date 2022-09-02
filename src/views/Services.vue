@@ -174,7 +174,7 @@ const setPosition = (id) => {
           lg:w-1/2
           mx-auto
           lg:text-2xl
-          text-sm
+          text-lg
           p-10
           text-[#0E1E43]
           lg:p-20
@@ -185,9 +185,10 @@ const setPosition = (id) => {
         prototype through to full-scale production runs.
       </div>
     </div>
+
     <div class="lg:flex lg:m-20 flex-wrap justify-evenly">
       <div
-        class="lg:w-80 relative m-4"
+        class="lg:w-80 relative m-4 lg:my-4 my-8"
         v-for="(service, index) in services"
         :key="index"
       >

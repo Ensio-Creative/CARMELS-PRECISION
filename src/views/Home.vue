@@ -65,8 +65,8 @@ import Hero from "../components/Hero.vue";
       </div>
     </div>
     <div class="lg:flex lg:py-20 py-10">
-      <div class="lg:w-[500px] lg:pl-20 pl-8 pr-8 my-auto">
-        <div>SERVICES AT CARMEL’S</div>
+      <div class="lg:w-[500px] lg:pl-20 pl-8 pr-8 lg:mt-32">
+        <div class="text-[#0E1E43]">SERVICES AT CARMEL’S</div>
         <div class="text-[#0E1E43] text-3xl my-4">
           We provide excellent precision and fabrication services that meet
           today’s need.
