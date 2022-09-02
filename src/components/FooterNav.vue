@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-[#0E1E43] text-center text-white py-20 w-full">
+    <div class="bg-[#0E1E43] text-center text-white py-32 w-full">
       <div class="">GET IN TOUCH</div>
       <div class="lg:text-3xl text-2xl font-bold lg:w-1/2 mx-auto my-5">
         Want to contact us or request a quotation? <br />
@@ -13,9 +13,9 @@
       </div>
     </div>
     <div class="lg:px-20 px-8">
-      <div class="py-10 flex flex-wrap justify-between text-[#081637]">
+      <div class="py-20 lg:pb-20 pb-1 flex flex-wrap justify-between text-[#081637]">
         <div class="lg:w-auto w-full">
-          <img src="../assets/logo-color.png" alt="" />
+          <img src="../assets/logo-color.png" class="w-40 lg:mb-0 mb-10" alt="" />
         </div>
         <div class="lg:my-0 my-6">
           <div class="font-bold">COMPANY</div>
@@ -39,7 +39,7 @@
           <div class="my-2">Sliding Head</div>
           <div class="my-2">Sheet Metal</div>
         </div>
-        <div class="lg:w-80 w-full lg:my-0 my-4">
+        <div class="lg:w-52 w-full lg:my-0 my-4">
           <div class="font-bold">SOCIAL MEDIA</div>
           <div class="flex justify-between">
             <img src="../assets/socials/instagram.png" alt="" />

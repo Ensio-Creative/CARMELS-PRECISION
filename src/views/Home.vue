@@ -5,7 +5,17 @@ import Hero from "../components/Hero.vue";
 <template>
   <div>
     <Hero />
-    <div class="lg:w-1/2 mx-auto text-2xl my-20 text-center text-[#0E1E43]">
+    <div
+      class="
+        lg:w-1/2
+        mx-auto
+        text-2xl
+        my-20
+        lg:mb-20
+        mb-8
+        text-center text-[#0E1E43]
+      "
+    >
       At Carmel’s Precision, we pride ourselves on providing a high quality
       services for precision engineering and fabrication requirements.
     </div>
@@ -54,16 +64,73 @@ import Hero from "../components/Hero.vue";
         <img src="../assets/side.png" alt="" />
       </div>
     </div>
-    <div class="flex py-20">
-      <div class="lg:w-96 lg:pl-20 pl-8 pr-8">
+    <div class="lg:flex lg:py-20 py-10">
+      <div class="lg:w-[500px] lg:pl-20 pl-8 pr-8 my-auto">
         <div>SERVICES AT CARMEL’S</div>
-        <div class="text-[#0E1E43] text-2xl my-4">
+        <div class="text-[#0E1E43] text-3xl my-4">
           We provide excellent precision and fabrication services that meet
           today’s need.
         </div>
         <div class="font-bold text-[#0E1E43] text-lg">Learn more</div>
       </div>
-      <div></div>
+      <div class="flex m-6">
+        <div class="relative">
+          <img class="m-1" src="../assets/left.png" alt="" />
+          <div
+            class="
+              text-white
+              absolute
+              lg:bottom-5
+              bottom-2
+              lg:left-12
+              left-6
+              lg:text-3xl
+              text-lg
+              font-bold
+            "
+          >
+            CNC Milling
+          </div>
+        </div>
+        <div>
+          <div class="relative">
+            <img class="m-1" src="../assets/right1.png" alt="" />
+            <div
+              class="
+                text-white
+                absolute
+                lg:bottom-5
+                bottom-2
+                lg:left-12
+                left-6
+                lg:text-3xl
+                text-lg
+                font-bold
+              "
+            >
+              CNC Turning
+            </div>
+          </div>
+          <div class="relative">
+            <img class="m-1 lg:mt-2" src="../assets/right2.png" alt="" />
+            <div
+              class="
+                text-white
+                absolute
+                lg:bottom-5
+                bottom-2
+                lg:left-12
+                left-6
+                lg:text-3xl
+                text-lg
+                font-bold
+              "
+            >
+              Sliding Head
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

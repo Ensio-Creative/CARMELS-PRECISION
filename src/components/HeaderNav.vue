@@ -14,12 +14,12 @@ const close = () => {
   <div
     :class="
       position > 550
-        ? ' flex w-full fixed lg:px-20 px-4 z-30 top-0 justify-between p-3 bg-white text-[#0E1E43]'
-        : 'flex w-full fixed lg:px-20 px-4 z-30 top-0 text-white  justify-between p-3'
+        ? ' flex w-full fixed lg:px-20 px-4 z-30 top-0 justify-between px-3 py-4 bg-white text-[#0E1E43]'
+        : 'flex w-full fixed lg:px-20 px-4 z-30 top-0 text-white  justify-between py-4 px-3'
     "
   >
-    <img v-if="position < 550" src="../assets/logo.png" alt="" />
-    <img v-else src="../assets/logo-color.png" alt="" />
+    <img v-if="position < 550" src="../assets/logo.png" class="w-40" alt="" />
+    <img v-else src="../assets/logo-color.png" class="w-40" alt="" />
     <div class="lg:flex justify-between w-96 my-auto hidden">
       <router-link to="/">
         <div>Home</div>

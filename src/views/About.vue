@@ -5,11 +5,11 @@ import PagesHero from "../components/PagesHero.vue";
   <div>
     <PagesHero img="about.png" title="About Us" />
     <div class="lg:p-20 lg:flex p-4">
-       <div class="lg:w-1/2 lg:order-last">
+       <div class="lg:w-1/2 lg:order-last lg:mt-0 mt-10">
         <img src="../assets/about-img.png" alt="" />
       </div>
       <div class="lg:w-1/2 lg:p-16 my-auto">
-        <div class="font-bold text-2xl text-[#0E1E43] w-52 my-4">
+        <div class="font-bold lg:text-3xl text-2xl text-[#0E1E43] my-4">
           Carmel’s Precision at a glance
         </div>
         <div class="text-lg text-[#555464]">

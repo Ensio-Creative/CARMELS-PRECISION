@@ -56,7 +56,7 @@ const handleFormSubmit = (e) => {
 
 <template>
   <div>
-    <div class="bg-[#0E1E43] text-white text-center lg:p-32 py-40 h-2/3">
+    <div class="bg-[#0E1E43] text-white text-center lg:p-32 py-44 height">
       <div class="lg:w-2/5 mx-auto">
         <div class="lg:text-8xl text-5xl font-bold">Contact</div>
         <div class="lg:px-0 px-8">
@@ -84,7 +84,22 @@ const handleFormSubmit = (e) => {
         </div>
       </div>
       <div class="lg:w-1/2">
-        <img src="../assets/map.png" alt="" />
+        <!-- <img src="../assets/map.png" alt="" /> -->
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="600"
+              height="500"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=8%20Lancaster%20Way,%20Ely,%20Cambridgeshire%20CB6%203NW&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://www.embedgooglemap.net"></a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="lg:w-2/3 mx-auto text-center my-12 p-4">
@@ -138,5 +153,25 @@ const handleFormSubmit = (e) => {
 input:focus,
 textarea:focus {
   outline: none;
+}
+.height {
+  height: 80vh;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+@media (max-width: 600px) {
+  .height {
+    height: 65vh;
+  }
 }
 </style>
