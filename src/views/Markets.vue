@@ -1,4 +1,3 @@
-
 <script setup>
 import PagesHero from "../components/PagesHero.vue";
 const markets = [

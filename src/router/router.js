@@ -26,4 +26,9 @@ export default [
         name: 'Services',
         component: () => import('../views/Services.vue')
     },
+    {
+        path: '/:marketName',
+        name: 'MarketTitle',
+        component: () => import('../views/_marketTitle.vue')
+    },
 ]
