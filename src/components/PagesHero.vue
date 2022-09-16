@@ -21,7 +21,7 @@ defineProps({
   height: 80vh;
 }
 .overtext {
-  left: 35%;
+  left: 5%;
 }
 @media (max-width: 600px) {
   .overtext {

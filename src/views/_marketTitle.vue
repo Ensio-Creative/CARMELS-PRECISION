@@ -28,11 +28,7 @@ onMounted(() => {
         <div class="my-6">{{ market.section4 }}</div>
         <div>
           <ul class="ml-6">
-            <li
-              class=""
-              v-for="(single, index) in market.list"
-              :key="index"
-            >
+            <li class="" v-for="(single, index) in market.list" :key="index">
               {{ single }}
             </li>
           </ul>
@@ -47,7 +43,23 @@ onMounted(() => {
       </div>
     </div>
     <div class="lg:mx-32 p-8">
-      <div class="font-bold text-[#0E1E43] text-xl">Other services</div>
+      <div class="font-bold text-[#0E1E43] my-4 text-xl">Other services</div>
+      <div class="lg:flex justify-between">
+        <div class="w-[49%] relative">
+          <img class="w-full" :src="'/images/others/' + market.image1" alt="" />
+          <div class="w-full h-full bg-black opacity-50 absolute top-0"></div>
+          <div class="absolute bottom-10 text-white text-3xl font-bold left-6">
+            {{ market.text1 }}
+          </div>
+        </div>
+        <div class="w-[49%] relative">
+          <img class="w-full" :src="'/images/others/' + market.image2" alt="" />
+          <div class="w-full h-full bg-black opacity-50 absolute top-0"></div>
+          <div class="absolute bottom-10 text-white text-3xl font-bold left-6">
+            {{ market.text2 }}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

@@ -9,7 +9,11 @@
         "section4": "",
         "img1": "milling.png",
         "list": [],
-        "hero": "milling.png"
+        "hero": "milling.png",
+        "image1": "turning.png",
+        "text1": "CNC Turning",
+        "image2": "sliding.png",
+        "text2": "Sliding Head"
     },
     {
         "title": "CNC Turning",
@@ -21,7 +25,11 @@
         "section4": "",
         "img1": "turning.png",
         "list": [],
-        "hero": "turning.png"
+        "hero": "turning.png",
+        "image1": "milling.png",
+        "text1": "CNC Milling",
+        "image2": "sliding.png",
+        "text2": "Sliding Head"
     },
     {
         "title": "Sliding Head",
@@ -36,7 +44,11 @@
             "STAR 10mm Sliding Head",
             "Tornos 1″ Bar Capacity Sliding Head"
         ],
-        "hero": "sliding-head.png"
+        "hero": "sliding-head.png",
+        "image1": "milling.png",
+        "text1": "CNC Milling",
+        "image2": "turning.png",
+        "text2": "CNC Turning"
     },
     {
         "title": "Sheet Metal",
@@ -54,7 +66,11 @@
             "Guifil 30 Tonne x 1.5 Metre CNC Press Brake",
             "Pemserter Series 4"
         ],
-        "hero": "sheet-metal.png"
+        "hero": "sheet-metal.png",
+        "image1": "turning.png",
+        "text1": "CNC Turning",
+        "image2": "fabrication.png",
+        "text2": "Fabrication"
     },
     {
         "title": "Fabrication",
@@ -73,7 +89,11 @@
             "Copper",
             "Nickel"
         ],
-        "hero": "fabrication.png"
+        "hero": "fabrication.png",
+        "image1": "sheet.png",
+        "text1": "Sheet Metal",
+        "image2": "welding.png",
+        "text2": "Welding"
     },
     {
         "title": "Welding",
@@ -85,7 +105,11 @@
         "section4": "",
         "img1": "welding.png",
         "list": [],
-        "hero": "welding.png"
+        "hero": "welding.png",
+        "image1": "sheet.png",
+        "text1": "Sheet Metal",
+        "image2": "fabrication.png",
+        "text2": "Fabrication"
     },
     {
         "title": "Engraving & Marking",
@@ -97,7 +121,11 @@
         "section4": "",
         "img1": "marking.png",
         "list": [],
-        "hero": "marking.png"
+        "hero": "marking.png",
+        "image1": "fabrication.png",
+        "text1": "Fabrication",
+        "image2": "welding.png",
+        "text2": "Welding"
     },
     {
         "title": "Quality Control",
@@ -109,7 +137,11 @@
         "section4": "Parts are carefully inspected and hand-finished as they leave the machine, giving us complete quality control at the point of production.",
         "img1": "quality.png",
         "list": [],
-        "hero": "quality.png"
+        "hero": "quality.png",
+        "image1": "welding.png",
+        "text1": "Welding",
+        "image2": "marking.png",
+        "text2": "Engraving & Marking"
     },
     {
         "title": "Finishing",
@@ -127,6 +159,10 @@
             "Plating and anodising",
             "Screen printing"
         ],
-        "hero": "finishing.png"
+        "hero": "finishing.png",
+        "image1": "marking.png",
+        "text1": "Engraving & Marking",
+        "image2": "control.png",
+        "text2": "Quality Control"
     }
 ]
