@@ -36,9 +36,9 @@
     height: 80vh;
   }
   .hero {
-    /* transform: scale(1.1); */
-    /* height: 76vh; */
-    /* width: 100%!important; */
+    transform: scale(1.2);
+    height: 73vh;
+    width: 91% !important;
   }
 }
 </style>

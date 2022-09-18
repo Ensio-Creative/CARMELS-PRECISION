@@ -1,5 +1,7 @@
 <script setup>
 import Hero from "../components/Hero.vue";
+
+document.title = "Home | Precision and Fabrication Services";
 </script>
 
 <template>
@@ -51,14 +53,14 @@ import Hero from "../components/Hero.vue";
           lg:w-1/2 lg:p-32
           px-6
           py-16
-          lg:text-5xl
+          lg:text-4xl
           text-3xl
           my-auto
           bg-[#0E1E43]
           text-white
         "
       >
-        We’re your CNC partner from prototyping to production on specifications.
+        We take a technological driven approcah from protypeing to production that further projects how we deliver to our clients.
       </div>
       <div>
         <img src="../assets/side.png" alt="" />

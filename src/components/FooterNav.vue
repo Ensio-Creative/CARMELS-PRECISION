@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="bg-[#0E1E43] text-center text-white py-32 w-full">
+    <div class="bg-[#0E1E43] text-center text-white py-32 w-full lg:mt-0 mt-10">
       <div class="">GET IN TOUCH</div>
-      <div class="lg:text-3xl text-2xl font-bold lg:w-1/2 mx-auto my-5">
+      <div class="lg:text-3xl text-2xl font-bold lg:w-1/2 w-80 mx-auto my-5">
         Want to contact us or request a quotation? <br />
         We are here to help.
       </div>
@@ -17,7 +17,7 @@
     <div class="lg:px-20 px-8">
       <div
         class="
-          py-20
+          py-10
           lg:pb-20
           pb-1
           flex flex-wrap
@@ -49,10 +49,18 @@
         </div>
         <div class="lg:my-0 my-6">
           <div class="font-bold">SERVICES</div>
-          <div class="my-2">CNC Milling</div>
-          <div class="my-2">CNC Turning</div>
-          <div class="my-2">Sliding Head</div>
-          <div class="my-2">Sheet Metal</div>
+          <router-link to="/cnc-milling">
+            <div class="my-2">CNC Milling</div>
+          </router-link>
+          <router-link to="/cnc-turning">
+            <div class="my-2">CNC Turning</div>
+          </router-link>
+          <router-link to="/sliding-head">
+            <div class="my-2">Sliding Head</div>
+          </router-link>
+          <router-link to="/sheet-metal">
+            <div class="my-2">Sheet Metal</div>
+          </router-link>
         </div>
         <div class="lg:w-52 w-full lg:my-0 my-4">
           <div class="font-bold">SOCIAL MEDIA</div>

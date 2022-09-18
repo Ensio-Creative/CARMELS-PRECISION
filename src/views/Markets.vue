@@ -1,5 +1,7 @@
 <script setup>
 import PagesHero from "../components/PagesHero.vue";
+  document.title = "Markets | Carmels Precision";
+
 const markets = [
   {
     title: "Medical",

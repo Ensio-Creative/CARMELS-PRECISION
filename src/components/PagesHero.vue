@@ -5,11 +5,19 @@ defineProps({
 });
 </script>
 <template>
-  <div>
-    <img class="img w-full" :src="'/images/' + img" alt="" />
+  <div class="lg:mb-0 mb-20">
+    <img class="img" :src="'/images/' + img" alt="" />
     <div class="bg-black opacity-60 absolute top-0 overlay w-full"></div>
     <div
-      class="absolute lg:top-96 top-80 overtext text-white lg:text-8xl text-5xl font-bold"
+      class="
+        absolute
+        lg:top-96
+        overtext
+        text-white
+        lg:text-8xl
+        text-5xl
+        font-bold
+      "
     >
       {{ title }}
     </div>
@@ -25,11 +33,14 @@ defineProps({
 }
 @media (max-width: 600px) {
   .overtext {
-    left: 15%;
+    left: 5%;
+    top: 52%;
   }
   .overlay,
   .img {
-    height: 65vh;
+    height: 60vh;
+    transform: scale(1.2);
+    width: 91%;
   }
 }
 </style>

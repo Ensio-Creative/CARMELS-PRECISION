@@ -3,6 +3,7 @@ import { ref } from "vue";
 import PagesHero from "../components/PagesHero.vue";
 import service from "../../public/services.json";
 
+  document.title = "Services | Carmels Precision";
 const services = service;
 
 const pos = ref(0);

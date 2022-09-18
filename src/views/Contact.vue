@@ -4,7 +4,7 @@ import { ref } from "vue";
 import { createToast } from "mosha-vue-toastify";
 import "mosha-vue-toastify/dist/style.css";
 
-// document.title = "Contact Us - Carmel's Group";
+  document.title = "Contact Us | Carmels Precision";
 
 const name = ref("");
 const message = ref("");
@@ -102,7 +102,7 @@ const handleFormSubmit = (e) => {
         </div>
       </div>
     </div>
-    <div class="lg:w-2/3 mx-auto text-center my-12 p-4">
+    <div class="lg:w-2/3 mx-auto text-center lg:my-12 my-4 p-4">
       <div class="text-2xl mx-auto my-12 lg:w-96">
         Please fill in the form below for question(s) or a quotation.
       </div>

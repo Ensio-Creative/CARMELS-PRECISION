@@ -73,13 +73,27 @@ const close = () => {
           </router-link>
         </div>
         <div class="p-4 text-[#C3C3C3] relative bottom-0">
-          <div>CNC Milling</div>
-          <div>CNC Turning</div>
-          <div>Sliding Head</div>
-          <div>Sheet Metal</div>
-          <div>Fabrication</div>
-          <div>Welding</div>
-          <div>Engraving & Marking</div>
+          <router-link to="/cnc-milling">
+            <div @click="close">CNC Milling</div>
+          </router-link>
+          <router-link to="/cnc-turning">
+            <div @click="close">CNC Turning</div>
+          </router-link>
+          <router-link to="/sliding-head">
+            <div @click="close">Sliding Head</div>
+          </router-link>
+          <router-link to="/sheet-metal">
+            <div @click="close">Sheet Metal</div>
+          </router-link>
+          <router-link to="/fabrication">
+            <div @click="close">Fabrication</div>
+          </router-link>
+          <router-link to="/welding">
+            <div @click="close">Welding</div>
+          </router-link>
+          <router-link to="/engraving-&-marking">
+            <div @click="close">Engraving & Marking</div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -104,5 +118,6 @@ const close = () => {
 .overlay-content {
   position: relative;
   width: 100%; /* 100% width */
+  padding: 5px;
 }
 </style>

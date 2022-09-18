@@ -11,6 +11,8 @@
         "list": [],
         "hero": "milling.png",
         "image1": "turning.png",
+        "slug1": "cnc-milling",
+        "slug2": "sliding-head",
         "text1": "CNC Turning",
         "image2": "sliding.png",
         "text2": "Sliding Head"
@@ -27,6 +29,8 @@
         "list": [],
         "hero": "turning.png",
         "image1": "milling.png",
+        "slug1": "cnc-milling",
+        "slug2": "sliding-head",
         "text1": "CNC Milling",
         "image2": "sliding.png",
         "text2": "Sliding Head"
@@ -46,6 +50,8 @@
         ],
         "hero": "sliding-head.png",
         "image1": "milling.png",
+        "slug1": "cnc-milling",
+        "slug2": "cnc-turning",
         "text1": "CNC Milling",
         "image2": "turning.png",
         "text2": "CNC Turning"
@@ -69,6 +75,8 @@
         "hero": "sheet-metal.png",
         "image1": "turning.png",
         "text1": "CNC Turning",
+        "slug1": "cnc-turning",
+        "slug2": "fabrication",
         "image2": "fabrication.png",
         "text2": "Fabrication"
     },
@@ -91,6 +99,8 @@
         ],
         "hero": "fabrication.png",
         "image1": "sheet.png",
+        "slug1": "sheet-metal",
+        "slug2": "welding",
         "text1": "Sheet Metal",
         "image2": "welding.png",
         "text2": "Welding"
@@ -107,6 +117,8 @@
         "list": [],
         "hero": "welding.png",
         "image1": "sheet.png",
+        "slug1": "sheet-metal",
+        "slug2": "fabrication",
         "text1": "Sheet Metal",
         "image2": "fabrication.png",
         "text2": "Fabrication"
@@ -123,6 +135,8 @@
         "list": [],
         "hero": "marking.png",
         "image1": "fabrication.png",
+        "slug1": "fabrication",
+        "slug2": "welding",
         "text1": "Fabrication",
         "image2": "welding.png",
         "text2": "Welding"
@@ -139,6 +153,8 @@
         "list": [],
         "hero": "quality.png",
         "image1": "welding.png",
+        "slug1": "welding",
+        "slug2": "engraving-&-marking",
         "text1": "Welding",
         "image2": "marking.png",
         "text2": "Engraving & Marking"
@@ -160,6 +176,8 @@
             "Screen printing"
         ],
         "hero": "finishing.png",
+        "slug1": "engraving-&-marking",
+        "slug2": "quality-control",
         "image1": "marking.png",
         "text1": "Engraving & Marking",
         "image2": "control.png",
