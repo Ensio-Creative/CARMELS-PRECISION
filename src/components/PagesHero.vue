@@ -34,13 +34,13 @@ defineProps({
 @media (max-width: 600px) {
   .overtext {
     left: 5%;
-    top: 52%;
+    top: 50%;
   }
   .overlay,
   .img {
-    height: 60vh;
-    transform: scale(1.2);
-    width: 91%;
+    height: 68vh;
+    width: 100%;
+    background-size: contain;
   }
 }
 </style>

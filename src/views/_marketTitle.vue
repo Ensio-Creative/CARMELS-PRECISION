@@ -1,21 +1,24 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import PagesHero from "../components/PagesHero.vue";
 import service from "../../public/services.json";
 import { useRoute } from "vue-router";
 const route = useRoute();
-const services = service;
+const services = ref(service);
 
 const market = ref({});
+
 onMounted(() => {
   const link = route.path.substring(1);
-  services.map((single) => {
+  services.value.map((single) => {
     if (single.slug === link) {
       market.value = single;
     }
   });
-  // console.log(market.value);
   document.title = market.value.title + " | Services";
+});
+onUnmounted(() => {
+  market.value = null;
 });
 </script>
 <template>
@@ -49,24 +52,24 @@ onMounted(() => {
         <div class="lg:w-[49%] relative lg:mb-0 mb-6">
           <img class="w-full" :src="'/images/others/' + market.image1" alt="" />
           <div class="w-full h-full bg-black opacity-50 absolute top-0"></div>
-          <router-link :to="'/' + market.slug1">
+          <a :href="'/' + market.slug1">
             <div
               class="absolute bottom-10 text-white text-3xl font-bold left-6"
             >
               {{ market.text1 }}
             </div>
-          </router-link>
+          </a>
         </div>
         <div class="lg:w-[49%] relative">
           <img class="w-full" :src="'/images/others/' + market.image2" alt="" />
           <div class="w-full h-full bg-black opacity-50 absolute top-0"></div>
-          <router-link :to="'/' + market.slug2">
+          <a :href="'/' + market.slug2">
             <div
               class="absolute bottom-10 text-white text-3xl font-bold left-6"
             >
               {{ market.text2 }}
             </div>
-          </router-link>
+          </a>
         </div>
       </div>
     </div>

@@ -73,27 +73,27 @@ const close = () => {
           </router-link>
         </div>
         <div class="p-4 text-[#C3C3C3] relative bottom-0">
-          <router-link to="/cnc-milling">
+          <a href="/cnc-milling">
             <div @click="close">CNC Milling</div>
-          </router-link>
-          <router-link to="/cnc-turning">
+          </a>
+          <a href="/cnc-turning">
             <div @click="close">CNC Turning</div>
-          </router-link>
-          <router-link to="/sliding-head">
+          </a>
+          <a href="/sliding-head">
             <div @click="close">Sliding Head</div>
-          </router-link>
-          <router-link to="/sheet-metal">
+          </a>
+          <a href="/sheet-metal">
             <div @click="close">Sheet Metal</div>
-          </router-link>
-          <router-link to="/fabrication">
+          </a>
+          <a href="/fabrication">
             <div @click="close">Fabrication</div>
-          </router-link>
-          <router-link to="/welding">
+          </a>
+          <a href="/welding">
             <div @click="close">Welding</div>
-          </router-link>
-          <router-link to="/engraving-&-marking">
+          </a>
+          <a href="/engraving-&-marking">
             <div @click="close">Engraving & Marking</div>
-          </router-link>
+          </a>
         </div>
       </div>
     </div>
