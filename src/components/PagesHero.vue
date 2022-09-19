@@ -40,7 +40,7 @@ defineProps({
   .img {
     height: 68vh;
     width: 100%;
-    background-size: contain;
+    object-fit: cover
   }
 }
 </style>

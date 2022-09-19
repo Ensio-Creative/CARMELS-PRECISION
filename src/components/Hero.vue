@@ -36,10 +36,8 @@
     height: 80vh;
   }
   .hero {
-    /* transform: scale(1.2); */
     height: 80vh;
-        background-size: contain;
-    /* width: 91% !important; */
+    object-fit: cover;
   }
 }
 </style>
