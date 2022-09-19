@@ -4,7 +4,7 @@
     <!-- <video src="../assets/bg-video.mp4" autoplay="true" class="hero" ></video> -->
     <div class="bg-black w-full absolute top-0 opacity-40 overlay"></div>
     <div
-      class="absolute lg:top-52 top-40 lg:w-1/2 lg:left-20 left-8 text-white"
+      class="absolute lg:top-52 top-40 lg:w-1/2 lg:left-20 right-6 left-6 text-white"
     >
       <div class="lg:text-7xl text-3xl font-bold">
         Technology driven for excellence

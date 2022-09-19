@@ -60,7 +60,7 @@ document.title = "Home | Precision and Fabrication Services";
           text-white
         "
       >
-        We take a technological driven approcah from protypeing to production that further projects how we deliver to our clients.
+        We take a technological driven approach from protyping to production that further projects how we deliver to our clients.
       </div>
       <div>
         <img src="../assets/side.png" alt="" />
