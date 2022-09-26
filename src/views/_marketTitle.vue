@@ -48,6 +48,7 @@ onUnmounted(() => {
     </div>
     <div class="lg:mx-32 p-8 pt-0 lg:mb-20">
       <div class="font-bold text-[#0E1E43] my-4 text-xl">Other services</div>
+      
       <div class="lg:flex justify-between">
         <div class="lg:w-[49%] relative lg:mb-0 mb-6">
           <img class="w-full" :src="'/images/others/' + market.image1" alt="" />

@@ -5,7 +5,7 @@ defineProps({
 });
 </script>
 <template>
-  <div class="lg:mb-0 mb-20">
+  <div class="lg:mb-0 mb-8">
     <img class="img" :src="'/images/' + img" alt="" />
     <div class="bg-black opacity-60 absolute top-0 overlay w-full"></div>
     <div
@@ -27,6 +27,7 @@ defineProps({
 .overlay,
 .img {
   height: 80vh;
+  width: 100%;
 }
 .overtext {
   left: 5%;

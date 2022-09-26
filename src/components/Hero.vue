@@ -15,7 +15,7 @@
       </div>
       <router-link to="/about">
         <div class="font-bold text-lg flex">
-          About Carmel’s Precision
+           Learn More
           <img src="../assets/Arrow1.png" class="h-2 my-auto mx-3" alt="" />
         </div>
       </router-link>
