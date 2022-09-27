@@ -47,7 +47,7 @@ const close = () => {
     <div id="myNav" class="overlay">
       <div class="overlay-content">
         <div class="flex p-4 justify-between">
-          <img class="w-40" src="../assets/logo-color.png" alt="" />
+          <img class="w-40" src="../assets/logo-color.svg" alt="" />
           <img
             @click="close"
             class="w-4 h-4 my-auto"
