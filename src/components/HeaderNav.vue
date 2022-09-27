@@ -18,8 +18,8 @@ const close = () => {
         : 'flex w-full fixed lg:px-20 px-4 z-30 top-0 text-white  justify-between py-4 px-3'
     "
   >
-    <img v-if="position < 550" src="../assets/logo.png" class="w-40" alt="" />
-    <img v-else src="../assets/logo-color.png" class="w-40" alt="" />
+    <img v-if="position < 550" src="../assets/logo.svg" class="w-40" alt="" />
+    <img v-else src="../assets/logo-color.svg" class="w-40" alt="" />
     <div class="lg:flex justify-between w-96 my-auto hidden">
       <router-link to="/">
         <div>Home</div>
@@ -55,24 +55,28 @@ const close = () => {
             alt=""
           />
         </div>
-        <div class="p-4 font-bold text-[#0E1E43] text-3xl">
+        <div class="p-4 font-bold text-[#0E1E43] text-4xl">
           <router-link to="/">
             <div @click="close" class="my-1">Home</div>
           </router-link>
+          <div class="bg-[#B0B0B0] h-[1px] my-4"></div>
           <router-link to="/about">
             <div @click="close" class="my-1">Company</div>
           </router-link>
+          <div class="bg-[#B0B0B0] h-[1px] my-4"></div>
           <router-link to="/services">
             <div @click="close" class="my-1">Services</div>
           </router-link>
+          <div class="bg-[#B0B0B0] h-[1px] my-4"></div>
           <router-link to="/markets">
             <div @click="close" class="my-1">Markets</div>
           </router-link>
+          <div class="bg-[#B0B0B0] h-[1px] my-4"></div>
           <router-link to="/contact">
             <div @click="close" class="my-1">Contact</div>
           </router-link>
         </div>
-        <div class="p-4 text-[#C3C3C3] relative bottom-0">
+        <!-- <div class="p-4 text-[#C3C3C3] relative bottom-0">
           <a href="/cnc-milling">
             <div @click="close">CNC Milling</div>
           </a>
@@ -94,7 +98,7 @@ const close = () => {
           <a href="/engraving-&-marking">
             <div @click="close">Engraving & Marking</div>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
