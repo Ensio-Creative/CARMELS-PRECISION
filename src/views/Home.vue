@@ -18,8 +18,8 @@ document.title = "Home | Precision and Fabrication Services";
         text-center text-[#0E1E43]
       "
     >
-      At Carmel’s Precision, we pride ourselves on providing a high quality
-      services for precision engineering and fabrication requirements.
+      We pride ourselves on providing a high quality services for precision
+      engineering and fabrication requirements.
     </div>
     <div class="lg:flex justify-evenly lg:w-4/5 mx-auto mb-20">
       <div class="p-8 lg:w-80 lg:m-0 m-6 border border-[#E9EBEC]">

@@ -10,7 +10,17 @@ document.title = "About the Company | Carmels Precision";
         <img src="../assets/about-img.png" alt="" />
       </div>
       <div class="lg:w-1/2 lg:p-16">
-        <div class="font-bold lg:text-3xl text-2xl w-64 text-[#0E1E43] lg:my-4 my-8">
+        <div
+          class="
+            font-bold
+            lg:text-3xl
+            text-2xl
+            w-64
+            text-[#0E1E43]
+            lg:my-4
+            my-8
+          "
+        >
           Overview of who we are
         </div>
         <div class="text-lg text-[#555464]">
@@ -25,8 +35,47 @@ document.title = "About the Company | Carmels Precision";
         </div>
       </div>
     </div>
-    <div>
-      <div  class="font-bold text-3xl text-center text-[#0E1E43] my-3">Our history</div>
+    <div class="relative">
+      <div class="font-bold text-3xl text-center text-[#0E1E43] my-3">
+        Our history
+      </div>
+      <div
+        class="bg-[#555464] w-2/3 h-[1px] mx-auto absolute top-[111px] left-52"
+      ></div>
+      <div class="flex justify-evenly text-center my-8 text-[#555464]">
+        <div class="w-56 relative">
+          <div class="text-lg font-thin">1995</div>
+          <div class="my-10">Paragon Precision Engineering (Before)</div>
+          <div
+            class="
+              bg-[#17B94E]
+              w-[2px]
+              h-[2px]
+              absolute
+              p-1
+              top-10
+              left-28
+              rounded-full
+            "
+          ></div>
+        </div>
+        <div class="w-72 relative">
+          <div class="text-lg font-thin">2022</div>
+          <div class="my-10">Carrmel’s Precision and Fabrication (Now)</div>
+          <div
+            class="
+              bg-[#17B94E]
+              w-[2px]
+              h-[2px]
+              absolute
+              p-1
+              top-10
+              left-36
+              rounded-full
+            "
+          ></div>
+        </div>
+      </div>
     </div>
     <div class="relative mb-20 lg:mt-0 mt-8">
       <img src="../assets/about-capabilities.png" class="img w-full" alt="" />
