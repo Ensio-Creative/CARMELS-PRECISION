@@ -40,12 +40,32 @@ document.title = "About the Company | Carmels Precision";
         Our history
       </div>
       <div
-        class="bg-[#555464] w-2/3 h-[1px] mx-auto absolute top-[111px] left-52"
+        class="
+          bg-[#B0B0B0]
+          lg:w-2/3
+          w-[1px]
+          lg:h-[1px]
+          h-[80%]
+          mx-auto
+          absolute
+          lg:top-[111px] lg:left-52
+          left-8
+        "
       ></div>
-      <div class="flex justify-evenly text-center my-8 text-[#555464]">
-        <div class="w-56 relative">
+      <div
+        class="
+          lg:flex
+          justify-evenly
+          lg:text-center
+          my-8
+          text-[#555464]
+          lg:ml-0
+          ml-14
+        "
+      >
+        <div class="w-56 relative lg:my-0 my-4 lg:text-base  text-sm">
           <div class="text-lg font-thin">1995</div>
-          <div class="my-10">Paragon Precision Engineering (Before)</div>
+          <div class="lg:my-10">Paragon Precision Engineering (Before)</div>
           <div
             class="
               bg-[#17B94E]
@@ -54,14 +74,15 @@ document.title = "About the Company | Carmels Precision";
               absolute
               p-1
               top-10
-              left-28
+              lg:left-28
+              -left-7
               rounded-full
             "
           ></div>
         </div>
-        <div class="w-72 relative">
+        <div class="w-56 lg:my-0 my-4 relative lg:text-base text-sm">
           <div class="text-lg font-thin">2022</div>
-          <div class="my-10">Carrmel’s Precision and Fabrication (Now)</div>
+          <div class="lg:my-10">Carrmel’s Precision and Fabrication (Now)</div>
           <div
             class="
               bg-[#17B94E]
@@ -70,7 +91,8 @@ document.title = "About the Company | Carmels Precision";
               absolute
               p-1
               top-10
-              left-36
+              lg:left-28
+              -left-7
               rounded-full
             "
           ></div>
