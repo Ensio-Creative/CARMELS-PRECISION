@@ -60,7 +60,8 @@ document.title = "Home | Precision and Fabrication Services";
           text-white
         "
       >
-        We take a technological driven approach from prototyping to production that further projects how we deliver to our clients.
+        We take a technological driven approach from prototyping to production
+        that further projects how we deliver to our clients.
       </div>
       <div>
         <img src="../assets/side.png" alt="" />
@@ -74,64 +75,70 @@ document.title = "Home | Precision and Fabrication Services";
           today’s need.
         </div>
         <router-link to="/services">
-        <div class="font-bold text-[#0E1E43] text-lg">Learn more</div>
+          <div class="font-bold text-[#0E1E43] text-lg">Learn more</div>
         </router-link>
       </div>
       <div class="flex m-6">
         <div class="relative">
           <img class="m-1" src="../assets/left.png" alt="" />
-          <div
-            class="
-              text-white
-              absolute
-              lg:bottom-5
-              bottom-2
-              lg:left-12
-              left-6
-              lg:text-3xl
-              text-lg
-              font-bold
-            "
+          <router-link to="/cnc-milling">
+            <div
+              class="
+                text-white
+                absolute
+                lg:bottom-5
+                bottom-2
+                lg:left-12
+                left-6
+                lg:text-3xl
+                text-lg
+                font-bold
+              "
+            >
+              CNC Milling
+            </div></router-link
           >
-            CNC Milling
-          </div>
         </div>
         <div>
           <div class="relative">
             <img class="m-1" src="../assets/right1.png" alt="" />
-            <div
-              class="
-                text-white
-                absolute
-                lg:bottom-5
-                bottom-2
-                lg:left-12
-                left-6
-                lg:text-3xl
-                text-lg
-                font-bold
-              "
-            >
-              CNC Turning
-            </div>
+            <router-link to="/cnc-turning">
+              <div
+                class="
+                  text-white
+                  absolute
+                  lg:bottom-5
+                  bottom-2
+                  lg:left-12
+                  left-6
+                  lg:text-3xl
+                  text-lg
+                  font-bold
+                "
+              >
+                CNC Turning
+              </div>
+            </router-link>
           </div>
           <div class="relative">
             <img class="m-1 lg:mt-2" src="../assets/right2.png" alt="" />
-            <div
-              class="
-                text-white
-                absolute
-                lg:bottom-5
-                bottom-2
-                lg:left-12
-                left-6
-                lg:text-3xl
-                text-lg
-                font-bold
-              "
-            >
-              Sliding Head
-            </div>
+            <router-link to="/sliding-head">
+              <div
+                class="
+                  text-white
+                  absolute
+                  lg:bottom-5
+                  bottom-2
+                  lg:left-12
+                  left-6
+                  lg:text-3xl
+                  text-lg
+                  font-bold
+                "
+              >
+                Sliding Head
+              </div>
+            </router-link>
           </div>
         </div>
       </div>

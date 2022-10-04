@@ -4,7 +4,7 @@ import { ref } from "vue";
 import { createToast } from "mosha-vue-toastify";
 import "mosha-vue-toastify/dist/style.css";
 
-  document.title = "Contact Us | Carmels Precision";
+document.title = "Contact Us | Carmels Precision";
 
 const name = ref("");
 const message = ref("");
@@ -73,13 +73,11 @@ const handleFormSubmit = (e) => {
             Address <br />
             8 Lancaster Way, Ely, Cambridgeshire CB6 3NW
           </div>
-          <div class="my-4">
-            T: 01353 662 244 <br />
-            F: 01353 666 868
-          </div>
+          <div class="my-4">T: 01353 662 244</div>
           <div class="my-4">
             Email <br />
-            sales@carmelsprecision.com
+            sales.uk@carmelsgroup.com <br />
+            office.admin@carmelsgroup.com
           </div>
         </div>
       </div>

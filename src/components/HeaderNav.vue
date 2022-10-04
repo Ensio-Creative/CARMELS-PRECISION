@@ -18,8 +18,8 @@ const close = () => {
         : 'flex w-full fixed lg:px-20 px-4 z-30 top-0 text-white  justify-between py-4 px-3'
     "
   >
-    <img v-if="position < 550" src="../assets/logo.svg" class="w-40" alt="" />
-    <img v-else src="../assets/logo-color.svg" class="w-40" alt="" />
+    <img v-if="position < 550" src="../assets/logo.svg" class="w-52" alt="" />
+    <img v-else src="../assets/logo-color.svg" class="w-52" alt="" />
     <div class="lg:flex justify-between w-96 my-auto hidden">
       <router-link to="/">
         <div>Home</div>

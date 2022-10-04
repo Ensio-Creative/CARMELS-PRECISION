@@ -1,31 +1,68 @@
 <template>
   <div>
-    <img class="hero" src="../assets/hero.png" alt="" />
+    <carousel :items-to-show="1">
+      <slide v-for="slide in slides" :key="slide">
+        <img class="hero w-full" :src="slide" alt="" />
+      </slide>
+      <template #addons>
+        <pagination />
+      </template>
+    </carousel>
+
+    <!-- <img class="hero" src="../assets/hero.png" alt="" /> -->
     <!-- <video src="../assets/bg-video.mp4" autoplay="true" class="hero" ></video> -->
     <div class="bg-black w-full absolute top-0 opacity-40 overlay"></div>
     <div
-      class="absolute lg:top-52 top-40 lg:w-1/2 lg:left-20 right-6 left-6 text-white"
+      class="
+        absolute
+        lg:top-52
+        top-40
+        lg:w-1/2 lg:left-20
+        right-6
+        left-6
+        text-white
+      "
     >
       <div class="lg:text-7xl text-3xl font-bold">
         Technology driven for excellence
       </div>
       <div class="text-lg my-4 lg:w-2/3">
-        Carmel’s Precision provides a complete CNC machining and fabrications
-        with the best of technology across a range of industry.
+        We provide a complete CNC machining and fabrications with the best of
+        technology across a range of industry.
       </div>
       <router-link to="/about">
         <div class="font-bold text-lg flex">
-           Learn More
+          Learn More
           <img src="../assets/Arrow1.png" class="h-2 my-auto mx-3" alt="" />
         </div>
       </router-link>
     </div>
   </div>
 </template>
+<script>
+// If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+
+export default {
+  name: "App",
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
+  },
+  data() {
+    return {
+      slides: ["/images/Mask3.png", "/images/Mask2.png", "/images/Mask1.png"],
+    };
+  },
+};
+</script>
 <style scoped>
 .hero {
   height: 100vh;
-  width: 100%;
+  width: 100% !important;
 }
 .overlay {
   height: 100vh;

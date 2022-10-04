@@ -3,7 +3,7 @@ import { ref } from "vue";
 import PagesHero from "../components/PagesHero.vue";
 import service from "../../public/services.json";
 
-  document.title = "Services | Carmels Precision";
+document.title = "Services | Carmels Precision";
 const services = service;
 
 const pos = ref(0);
@@ -30,8 +30,8 @@ const setPosition = (id) => {
           text-center
         "
       >
-        We offers a comprehensive range of precision engineering services from
-        prototype through to full-scale production runs.
+        We offers a comprehensive range of precision engineering and fabrication
+        services from prototype through to full-scale production runs.
       </div>
     </div>
 

@@ -9,21 +9,24 @@ document.title = "About the Company | Carmels Precision";
       <div class="lg:w-1/2 lg:order-last lg:mt-0 mt-10">
         <img src="../assets/about-img.png" alt="" />
       </div>
-      <div class="lg:w-1/2 lg:p-16 my-auto">
-        <div class="font-bold lg:text-3xl text-2xl text-[#0E1E43] lg:my-4 my-8">
-          Carmel’s Precision at a glance
+      <div class="lg:w-1/2 lg:p-16">
+        <div class="font-bold lg:text-3xl text-2xl w-64 text-[#0E1E43] lg:my-4 my-8">
+          Overview of who we are
         </div>
         <div class="text-lg text-[#555464]">
-          Carmel’s Precision Engineering (formerly Paragon Engineering) is one
-          of the world’s leading CNC machining company providing unrivalled
-          services across a range of industry from prototyping to fabrication
-          with the mission of exceeding client expectations and promoting
-          excellence championed by our experienced engineers. We are dedicated
-          to implementing world class standards across all functions, and
-          committed to achieving outstanding customer service across our
-          services.
+          Carmel’s Precision Engineering and Fabrication (formerly Paragon
+          Engineering) is one of the world’s leading CNC machining and
+          fabrication company providing unrivalled services across a range of
+          industry from prototyping to fabrication with the mission of exceeding
+          client expectations and promoting excellence championed by our
+          experienced engineers. We are dedicated to implementing world class
+          standards across all functions, and committed to achieving outstanding
+          customer service across our services.
         </div>
       </div>
+    </div>
+    <div>
+      <div  class="font-bold text-3xl text-center text-[#0E1E43] my-3">Our history</div>
     </div>
     <div class="relative mb-20 lg:mt-0 mt-8">
       <img src="../assets/about-capabilities.png" class="img w-full" alt="" />
