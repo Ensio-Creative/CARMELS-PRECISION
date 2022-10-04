@@ -35,8 +35,8 @@ document.title = "About the Company | Carmels Precision";
         </div>
       </div>
     </div>
-    <div class="relative">
-      <div class="font-bold text-3xl text-center text-[#0E1E43] my-3">
+    <div class="relative lg:mb-0 mb-12">
+      <div class="font-bold text-3xl lg:ml-0 ml-6 lg:text-center text-[#0E1E43] my-3">
         Our history
       </div>
       <div
@@ -80,7 +80,7 @@ document.title = "About the Company | Carmels Precision";
             "
           ></div>
         </div>
-        <div class="w-56 lg:my-0 my-4 relative lg:text-base text-sm">
+        <div class="lg:w-72 w-56 lg:my-0 my-4 relative lg:text-base text-sm">
           <div class="text-lg font-thin">2022</div>
           <div class="lg:my-10">Carrmel’s Precision and Fabrication (Now)</div>
           <div
@@ -91,7 +91,7 @@ document.title = "About the Company | Carmels Precision";
               absolute
               p-1
               top-10
-              lg:left-28
+              lg:left-36
               -left-7
               rounded-full
             "

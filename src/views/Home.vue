@@ -15,13 +15,14 @@ document.title = "Home | Precision and Fabrication Services";
         my-20
         lg:mb-20
         mb-8
+        w-[90%]
         text-center text-[#0E1E43]
       "
     >
       We pride ourselves on providing a high quality services for precision
       engineering and fabrication requirements.
     </div>
-    <div class="lg:flex justify-evenly lg:w-4/5 mx-auto mb-20">
+    <div class="lg:flex justify-evenly lg:w-4/5 mx-auto mb-20 text-[#0E1E43]">
       <div class="p-8 lg:w-80 lg:m-0 m-6 border border-[#E9EBEC]">
         <img class="w-12 h-12" src="../assets/check.png" alt="" />
         <div class="font-bold my-2">Top Services</div>
