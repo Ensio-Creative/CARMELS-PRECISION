@@ -28,7 +28,7 @@
         <div class="lg:w-auto w-full">
           <img
             src="../assets/logo-color.svg"
-            class="w-52 lg:mb-0 mb-10"
+            class="lg:w-80 w-52 lg:mb-0 mb-10"
             alt=""
           />
         </div>
