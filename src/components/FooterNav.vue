@@ -49,18 +49,18 @@
         </div>
         <div class="lg:my-0 my-6">
           <div class="font-bold">SERVICES</div>
-          <router-link to="/cnc-milling">
+          <a href="/cnc-milling">
             <div class="my-2">CNC Milling</div>
-          </router-link>
-          <router-link to="/cnc-turning">
+          </a>
+          <a href="/cnc-turning">
             <div class="my-2">CNC Turning</div>
-          </router-link>
-          <router-link to="/sliding-head">
+          </a>
+          <a href="/sliding-head">
             <div class="my-2">Sliding Head</div>
-          </router-link>
-          <router-link to="/sheet-metal">
+          </a>
+          <a href="/sheet-metal">
             <div class="my-2">Sheet Metal</div>
-          </router-link>
+          </a>
         </div>
         <div class="lg:w-52 w-full lg:my-0 my-4">
           <div class="font-bold">SOCIAL MEDIA</div>
