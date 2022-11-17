@@ -43,7 +43,7 @@ document.title = "Home | Precision and Fabrication Services";
         <div>
           <div class="relative">
             <img class="m-1" src="../assets/right1.png" alt="" />
-            <router-link to="/cnc-turning">
+            <router-link to="/fabrication">
               <div
                 class="
                   text-white
@@ -57,13 +57,13 @@ document.title = "Home | Precision and Fabrication Services";
                   font-bold
                 "
               >
-                CNC Turning
+                Fabrication
               </div>
             </router-link>
           </div>
           <div class="relative">
             <img class="m-1 lg:mt-2" src="../assets/right2.png" alt="" />
-            <router-link to="/sliding-head">
+            <router-link to="/sheet-metal">
               <div
                 class="
                   text-white
@@ -77,7 +77,7 @@ document.title = "Home | Precision and Fabrication Services";
                   font-bold
                 "
               >
-                Sliding Head
+                Sheet Metal
               </div>
             </router-link>
           </div>

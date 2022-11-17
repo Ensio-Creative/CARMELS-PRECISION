@@ -135,9 +135,9 @@ const handleFormSubmit = (e) => {
           v-model="message"
         ></textarea>
       </div>
-      <div class="flex lg:w-2/3 justify-evenly my-4 mx-auto">
-        <div>(Optional) Upload document</div>
-        <input type="file" />
+      <div class="lg:flex lg:w-2/3 justify-evenly my-4 mx-auto">
+        <div class="text-center">(Optional) Upload document</div>
+        <input class="mx-auto w-2/3" type="file" />
       </div>
       <div>
         <input
