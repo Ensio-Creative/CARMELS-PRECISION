@@ -84,7 +84,7 @@
           text-[#081637] text-sm
         "
       >
-        <div>© 2022 Carmel’s Precision Limited.</div>
+        <div>© 2022 Carmel’s PFSM. - <router-link to="/privacy-policy">Privacy Policy</router-link>  </div>
         <div>
           Design:
           <a href="https://ensiocreative.com/" target="blank">Ensio Creative</a>

@@ -27,6 +27,11 @@ export default [
         component: () => import('../views/Services.vue')
     },
     {
+        path: '/privacy-policy',
+        name: 'Privacy',
+        component: () => import('../views/privacy.vue')
+    },
+    {
         path: '/:marketName',
         name: 'MarketTitle',
         component: () => import('../views/_marketTitle.vue')
