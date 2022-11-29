@@ -24,14 +24,7 @@ document.title = "About the Company | Carmels Precision";
           Overview of who we are
         </div>
         <div class="text-lg text-[#555464]">
-          Carmel’s Precision Engineering and Fabrication (formerly Paragon
-          Engineering) is one of the world’s leading CNC machining and
-          fabrication company providing unrivalled services across a range of
-          industry from prototyping to fabrication with the mission of exceeding
-          client expectations and promoting excellence championed by our
-          experienced engineers. We are dedicated to implementing world class
-          standards across all functions, and committed to achieving outstanding
-          customer service across our services.
+         Carmel’s Precision Engineering and Fabrication (formerly Paragon Engineering) is one of the UK’s leading CNC machining and fabrication company providing  unrivalled services across a range of industry from prototyping to fabrication with the mission of exceeding client expectations and promoting excellence championed by our experienced engineers. We are dedicated to implementing world class standards across all functions, and committed to achieving outstanding customer service across our services.
         </div>
       </div>
     </div>

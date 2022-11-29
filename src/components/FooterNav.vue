@@ -63,12 +63,15 @@
           </a>
         </div>
         <div class="lg:w-52 w-full lg:my-0 my-4">
-          <div class="font-bold">SOCIAL MEDIA</div>
+          <div class="font-bold lg:pl-2">SOCIAL MEDIA</div>
           <div class="flex justify-between">
             <img src="../assets/socials/instagram.png" alt="" />
             <img src="../assets/socials/twitter.png" alt="" />
             <img src="../assets/socials/linkedln.png" alt="" />
             <img src="../assets/socials/facebook.png" alt="" />
+          </div>
+          <div>
+            <img class="lg:pl-2 lg:mx-0 mx-auto" src="../assets/Made-in-Britain.svg" alt="" />
           </div>
         </div>
       </div>
@@ -84,7 +87,10 @@
           text-[#081637] text-sm
         "
       >
-        <div>© 2022 Carmel’s PFSM. - <router-link to="/privacy-policy">Privacy Policy</router-link>  </div>
+        <div>
+          © 2022 Carmel’s PFSM. -
+          <router-link to="/privacy-policy">Privacy Policy</router-link>
+        </div>
         <div>
           Design:
           <a href="https://ensiocreative.com/" target="blank">Ensio Creative</a>
