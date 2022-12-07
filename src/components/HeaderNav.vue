@@ -18,9 +18,14 @@ const close = () => {
         : 'flex w-full fixed lg:px-20 px-4 z-30 top-0 text-white  justify-between py-4 px-3'
     "
   >
-    <img v-if="position < 550" src="../assets/logo.svg" class="lg:w-80 w-52" alt="" />
+    <img
+      v-if="position < 550"
+      src="../assets/logo.svg"
+      class="lg:w-80 w-52"
+      alt=""
+    />
     <img v-else src="../assets/logo-color.svg" class="lg:w-80 w-52" alt="" />
-    <div class="lg:flex justify-between w-96 my-auto hidden">
+    <div class="lg:flex justify-between w-2/5 my-auto hidden">
       <router-link to="/">
         <div>Home</div>
       </router-link>
@@ -36,6 +41,9 @@ const close = () => {
       <router-link to="/contact">
         <div>Contact us</div>
       </router-link>
+      <div>
+        <img class="mx-3" src="../assets/Britain.svg" alt="" />
+      </div>
     </div>
     <div class="lg:hidden block my-auto">
       <img @click="toggle" src="../assets/bar.png" alt="" />
@@ -75,6 +83,9 @@ const close = () => {
           <router-link to="/contact">
             <div @click="close" class="my-1">Contact</div>
           </router-link>
+          <div>
+            <img class="w-32 mt-20" src="../assets/Britain.svg" alt="" />
+          </div>
         </div>
         <!-- <div class="p-4 text-[#C3C3C3] relative bottom-0">
           <a href="/cnc-milling">
