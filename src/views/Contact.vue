@@ -16,7 +16,7 @@ const handleFormSubmit = (e) => {
   // e.preventDefault();
   loading.value = true;
 
-  fetch("https://formsubmit.co/ajax/alaboexcel@gmail.com", {
+  fetch("https://formsubmit.co/ajax/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -60,10 +60,37 @@ const handleFormSubmit = (e) => {
       <div class="lg:w-2/5 mx-auto">
         <div class="lg:text-8xl text-5xl font-bold">Contact</div>
         <div class="lg:px-0 px-8">
-          Whether you have questions, need feedback or a quotation, we would
-          love to hear from you. Contact us today and we will be sure to respond
-          within 24 hours.
+          Whether you have questions, need feedback or a quotation,
+          we would love to hear from you. Contact us today and we
+          will be respond to you as soon as we can.
         </div>
+      </div>
+    </div>
+
+    <div class="lg:w-2/3 mx-auto text-center lg:my-12 my-4 p-4">
+      <div class="text-2xl mx-auto my-12 lg:w-96">
+        Please fill in the form below for question(s) or a quotation.
+      </div>
+      <div>
+        <input type="text" class="border-b border-[#C3C3C3] w-full p-2 my-2" placeholder="Name" v-model="name" />
+      </div>
+      <div>
+        <input type="email" class="border-b border-[#C3C3C3] w-full p-2 my-2" placeholder="Email" v-model="email" />
+      </div>
+      <div>
+        <input type="text" class="border-b border-[#C3C3C3] w-full p-2 my-2" placeholder="Company" v-model="company" />
+      </div>
+      <div>
+        <textarea class="border-b border-[#C3C3C3] w-full p-2 h-32 my-2" placeholder="Message"
+          v-model="message"></textarea>
+      </div>
+      <div class="lg:flex lg:w-2/3 justify-evenly my-4 mx-auto">
+        <div class="text-center">(Optional) Upload document</div>
+        <input class="mx-auto w-2/3" type="file" />
+      </div>
+      <div>
+        <input @click="handleFormSubmit(e)" type="button" class="w-full bg-[#0E1E43] text-white p-3 my-2"
+          :value="loading ? 'Loading...' : 'SEND MESSAGE'" />
       </div>
     </div>
     <div class="lg:flex">
@@ -85,67 +112,12 @@ const handleFormSubmit = (e) => {
         <!-- <img src="../assets/map.png" alt="" /> -->
         <div class="mapouter">
           <div class="gmap_canvas">
-            <iframe
-              width="600"
-              height="500"
-              id="gmap_canvas"
+            <iframe width="600" height="500" id="gmap_canvas"
               src="https://maps.google.com/maps?q=8%20Lancaster%20Way,%20Ely,%20Cambridgeshire%20CB6%203NW&t=&z=17&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-            ></iframe
-            ><a href="https://www.embedgooglemap.net"></a>
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+              href="https://www.embedgooglemap.net"></a>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="lg:w-2/3 mx-auto text-center lg:my-12 my-4 p-4">
-      <div class="text-2xl mx-auto my-12 lg:w-96">
-        Please fill in the form below for question(s) or a quotation.
-      </div>
-      <div>
-        <input
-          type="text"
-          class="border-b border-[#C3C3C3] w-full p-2 my-2"
-          placeholder="Name"
-          v-model="name"
-        />
-      </div>
-      <div>
-        <input
-          type="email"
-          class="border-b border-[#C3C3C3] w-full p-2 my-2"
-          placeholder="Email"
-          v-model="email"
-        />
-      </div>
-      <div>
-        <input
-          type="text"
-          class="border-b border-[#C3C3C3] w-full p-2 my-2"
-          placeholder="Company"
-          v-model="company"
-        />
-      </div>
-      <div>
-        <textarea
-          class="border-b border-[#C3C3C3] w-full p-2 h-32 my-2"
-          placeholder="Message"
-          v-model="message"
-        ></textarea>
-      </div>
-      <div class="lg:flex lg:w-2/3 justify-evenly my-4 mx-auto">
-        <div class="text-center">(Optional) Upload document</div>
-        <input class="mx-auto w-2/3" type="file" />
-      </div>
-      <div>
-        <input
-          @click="handleFormSubmit(e)"
-          type="button"
-          class="w-full bg-[#0E1E43] text-white p-3 my-2"
-          :value="loading ? 'Loading...' : 'SEND MESSAGE'"
-        />
       </div>
     </div>
   </div>
@@ -156,28 +128,34 @@ input:focus,
 textarea:focus {
   outline: none;
 }
+
 .height {
   height: 80vh;
 }
+
 .mapouter {
   position: relative;
   text-align: right;
   height: 500px;
   width: 600px;
 }
+
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
   height: 500px;
   width: 600px;
 }
+
 @media (max-width: 600px) {
   .height {
     height: 65vh;
   }
+
   .mapouter {
     width: 100%;
   }
+
   .gmap_canvas {
     width: 100%;
   }

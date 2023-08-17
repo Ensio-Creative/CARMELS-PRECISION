@@ -16,15 +16,17 @@ document.title = "Home | Precision and Fabrication Services";
           today’s need.
         </div>
         <router-link to="/services">
-          <div class="font-bold text-[#0E1E43] text-lg">Learn more</div>
+          <div class="font-bold flex text-[#0E1E43] text-lg">Learn more
+
+            <img class="ml-3" src="/images/Group.png" alt="">
+          </div>
         </router-link>
       </div>
       <div class="flex m-6">
         <div class="relative">
-          <img class="m-1" src="../assets/left.png" alt="" />
+          <img class="m-1" src="../assets/Mask-group.png" alt="" />
           <router-link to="/cnc-milling">
-            <div
-              class="
+            <div class="
                 text-white
                 absolute
                 lg:bottom-5
@@ -34,18 +36,16 @@ document.title = "Home | Precision and Fabrication Services";
                 lg:text-3xl
                 text-lg
                 font-bold
-              "
-            >
+              ">
               CNC Milling
-            </div></router-link
-          >
+            </div>
+          </router-link>
         </div>
         <div>
           <div class="relative">
             <img class="m-1" src="../assets/right1.png" alt="" />
             <router-link to="/fabrication">
-              <div
-                class="
+              <div class="
                   text-white
                   absolute
                   lg:bottom-5
@@ -55,8 +55,7 @@ document.title = "Home | Precision and Fabrication Services";
                   lg:text-3xl
                   text-lg
                   font-bold
-                "
-              >
+                ">
                 Fabrication
               </div>
             </router-link>
@@ -64,8 +63,7 @@ document.title = "Home | Precision and Fabrication Services";
           <div class="relative">
             <img class="m-1 lg:mt-2" src="../assets/right2.png" alt="" />
             <router-link to="/sheet-metal">
-              <div
-                class="
+              <div class="
                   text-white
                   absolute
                   lg:bottom-5
@@ -75,8 +73,7 @@ document.title = "Home | Precision and Fabrication Services";
                   lg:text-3xl
                   text-lg
                   font-bold
-                "
-              >
+                ">
                 Sheet Metal
               </div>
             </router-link>
@@ -86,8 +83,7 @@ document.title = "Home | Precision and Fabrication Services";
     </div>
 
     <div class="lg:flex bg-[#0E1E43]">
-      <div
-        class="
+      <div class="
           lg:w-1/2 lg:p-32
           px-6
           py-16
@@ -96,8 +92,7 @@ document.title = "Home | Precision and Fabrication Services";
           my-auto
           bg-[#0E1E43]
           text-white
-        "
-      >
+        ">
         We’re your CNC partner from prototyping to production on specifications.
       </div>
       <div>
@@ -105,8 +100,7 @@ document.title = "Home | Precision and Fabrication Services";
       </div>
     </div>
 
-    <div
-      class="
+    <div class="
         lg:w-1/2
         mx-auto
         text-2xl
@@ -115,8 +109,7 @@ document.title = "Home | Precision and Fabrication Services";
         mb-8
         w-[90%]
         text-center text-[#0E1E43]
-      "
-    >
+      ">
       We pride ourselves on providing a high quality services for precision
       engineering and fabrication requirements.
     </div>

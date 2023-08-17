@@ -11,26 +11,19 @@ const close = () => {
 </script>
 
 <template>
-  <div
-    :class="
-      position > 550
-        ? ' flex w-full fixed lg:px-20 px-4 z-30 top-0 justify-between px-3 py-4 bg-white text-[#0E1E43]'
-        : 'flex w-full fixed lg:px-20 px-4 z-30 top-0 text-white  justify-between py-4 px-3'
-    "
-  >
-    <img
-      v-if="position < 550"
-      src="../assets/logo.svg"
-      class="lg:w-80 w-52"
-      alt=""
-    />
-    <img v-else src="../assets/logo-color.svg" class="lg:w-80 w-52" alt="" />
+  <div :class="position > 550 ?
+    'flex lg:w-[90%] mx-auto left-0 right-0 fixed lg:px-20 px-4 z-30 top-0 justify-between px-3 py-6 bg-white text-[#0E1E43] header' :
+    'flex w-full fixed lg:px-20 px-4 z-30 top-0 text-white  justify-between py-4 px-3'">
+    <router-link to="/">
+      <img v-if="position < 550" src="../assets/logo.svg" class="lg:w-80 w-52" alt="" />
+      <img v-else src="../assets/logo-color.svg" class="lg:w-80 w-52" alt="" />
+    </router-link>
     <div class="lg:flex justify-between w-2/5 my-auto hidden">
       <router-link to="/">
         <div>Home</div>
       </router-link>
       <router-link to="/about">
-        <div>Company</div>
+        <div>About Us</div>
       </router-link>
       <router-link to="/services">
         <div>Services</div>
@@ -48,7 +41,7 @@ const close = () => {
     <div class="lg:hidden block my-auto">
       <img @click="toggle" src="../assets/bar.png" alt="" />
     </div>
-    <div v-if="position > 550" class="lg:hidden block my-auto">
+    <div  v-if="position > 550" class="lg:hidden block my-auto">
       <img @click="toggle" src="../assets/blue-bar.png" alt="" />
     </div>
 
@@ -56,12 +49,7 @@ const close = () => {
       <div class="overlay-content">
         <div class="flex p-4 justify-between">
           <img class="w-40" src="../assets/logo-color.svg" alt="" />
-          <img
-            @click="close"
-            class="w-4 h-4 my-auto"
-            src="../assets/close.png"
-            alt=""
-          />
+          <img @click="close" class="w-4 h-4 my-auto" src="../assets/close.png" alt="" />
         </div>
         <div class="p-4 font-bold text-[#0E1E43] text-4xl">
           <router-link to="/">
@@ -69,7 +57,7 @@ const close = () => {
           </router-link>
           <div class="bg-[#B0B0B0] h-[1px] my-4"></div>
           <router-link to="/about">
-            <div @click="close" class="my-1">Company</div>
+            <div @click="close" class="my-1">About Us</div>
           </router-link>
           <div class="bg-[#B0B0B0] h-[1px] my-4"></div>
           <router-link to="/services">
@@ -120,19 +108,38 @@ const close = () => {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
   background-color: #ffff;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  width: 100%; /* 100% width */
+  width: 100%;
+  /* 100% width */
   padding: 5px;
+}
+
+.header {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 22px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
 }
 </style>

@@ -8,29 +8,23 @@
       </div>
       <div>
         <router-link to="/contact">
-          <button class="bg-white p-3 w-44 rounded-sm text-[#0E1E43]">
-            TALK TO US
+          <button class="bg-[#EE3C23] p-3 w-44 rounded-sm text-white">
+            CONTACT US
           </button>
         </router-link>
       </div>
     </div>
     <div class="lg:px-20 px-8">
-      <div
-        class="
+      <div class="
           py-10
           lg:pb-20
           pb-1
           flex flex-wrap
           justify-between
           text-[#081637]
-        "
-      >
+        ">
         <div class="lg:w-auto w-full">
-          <img
-            src="../assets/logo-color.svg"
-            class="lg:w-80 w-52 lg:mb-0 mb-10"
-            alt=""
-          />
+          <img src="../assets/logo-color.svg" class="lg:w-80 w-52 lg:mb-0 mb-10" alt="" />
         </div>
         <div class="lg:my-0 my-6 lg:ml-20">
           <div class="font-bold">COMPANY</div>
@@ -73,16 +67,11 @@
             </div>
           </div>
           <div>
-            <img
-              class="lg:pl-2 lg:mx-0 mx-auto"
-              src="../assets/Made-in-Britain.svg"
-              alt=""
-            />
+            <img class="lg:pl-2 lg:mx-0 mx-auto" src="../assets/Made-in-Britain.svg" alt="" />
           </div>
         </div>
       </div>
-      <div
-        class="
+      <div class="
           lg:flex
           justify-between
           border-t
@@ -91,8 +80,7 @@
           text-center
           border-[#E9EBEC]
           text-[#081637] text-sm
-        "
-      >
+        ">
         <div>
           © 2022 Carmel’s PFSM. -
           <router-link to="/privacy-policy">Privacy Policy</router-link>

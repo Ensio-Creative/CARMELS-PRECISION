@@ -12,8 +12,7 @@
     <!-- <img class="hero" src="../assets/hero.png" alt="" /> -->
     <!-- <video src="../assets/bg-video.mp4" autoplay="true" class="hero" ></video> -->
     <div class="bg-black w-full absolute top-0 opacity-40 overlay"></div>
-    <div
-      class="
+    <div class="
         absolute
         lg:top-52
         top-40
@@ -21,8 +20,7 @@
         right-6
         left-6
         text-white
-      "
-    >
+      ">
       <div class="lg:text-7xl text-3xl font-bold">
         Technology driven for excellence
       </div>
@@ -30,12 +28,19 @@
         We provide a complete CNC machining and fabrications with the best of
         technology across a range of industry.
       </div>
-      <router-link to="/about">
-        <div class="font-bold text-lg flex">
-          Learn More
-          <img src="../assets/Arrow1.png" class="h-2 my-auto mx-3" alt="" />
-        </div>
-      </router-link>
+      <div class="flex">
+        <router-link to="/about">
+          <div class=" text-lg bg-[#EE3C23] p-3">
+            Learn More
+            <!-- <img src="../assets/Arrow1.png" class="h-2 my-auto mx-3" alt="" /> -->
+          </div>
+        </router-link>
+        <router-link to="/contact">
+          <div class="ml-5 text-lg bg-[#EE3C23] p-3">
+            Request a Quote
+          </div>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -64,14 +69,18 @@ export default {
   height: 100vh;
   width: 100% !important;
 }
+
 .overlay {
   height: 100vh;
 }
+
 @media (max-width: 600px) {
+
   .hero,
   .overlay {
     height: 80vh;
   }
+
   .hero {
     height: 80vh;
     object-fit: cover;
