@@ -1,10 +1,19 @@
 <script setup>
+import { ref } from 'vue'
+
 defineProps({
   position: Number,
 });
+const services = ref(false)
+
 const toggle = () => {
   document.getElementById("myNav").style.width = "100%";
 };
+
+const switchServices = () => {
+  services.value = !services.value
+}
+
 const close = () => {
   document.getElementById("myNav").style.width = "0%";
 };
@@ -12,8 +21,8 @@ const close = () => {
 
 <template>
   <div :class="position > 550 ?
-    'flex lg:w-[90%] mx-auto left-0 right-0 fixed lg:px-20 px-4 z-30 top-0 justify-between px-3 py-6 bg-white text-[#0E1E43] header' :
-    'flex w-full fixed lg:px-20 px-4 z-30 top-0 text-white  justify-between py-4 px-3'">
+    'flex lg:w-[90%] flex-wrap mx-auto left-0 right-0 fixed lg:px-20 px-4 z-30 top-0 justify-between px-3 py-6 bg-white text-[#0E1E43] header' :
+    'flex w-full flex-wrap fixed lg:px-20 px-4 z-30 top-0 text-white  justify-between py-4 px-3'">
     <router-link to="/">
       <img v-if="position < 550" src="../assets/logo.svg" class="lg:w-80 w-52" alt="" />
       <img v-else src="../assets/logo-color.svg" class="lg:w-80 w-52" alt="" />
@@ -25,9 +34,11 @@ const close = () => {
       <router-link to="/about">
         <div>About Us</div>
       </router-link>
-      <router-link to="/services">
-        <div>Services</div>
-      </router-link>
+      <!-- <router-link to="/services"> -->
+      <div @mouseenter="switchServices" class="flex">Services
+        <img class="w-auto my-auto mt-2 ml-2" src="../assets/dropdown.png" alt="">
+      </div>
+      <!-- </router-link> -->
       <router-link to="/markets">
         <div>Markets</div>
       </router-link>
@@ -41,8 +52,33 @@ const close = () => {
     <div class="lg:hidden block my-auto">
       <img @click="toggle" src="../assets/bar.png" alt="" />
     </div>
-    <div  v-if="position > 550" class="lg:hidden block my-auto">
+    <div v-if="position > 550" class="lg:hidden block my-auto">
       <img @click="toggle" src="../assets/blue-bar.png" alt="" />
+    </div>
+
+    <div v-if="services" @mouseleave="switchServices"
+      class="w-full header mt-4 lg:flex hidden justify-around text-sm text-black bg-white p-3">
+      <a href="/cnc-milling">
+        <div>CNC Milling</div>
+      </a>
+      <a href="/cnc-turning">
+        <div>CNC Turning</div>
+      </a>
+      <a href="/sliding-head">
+        <div>Sliding Head</div>
+      </a>
+      <a href="/sheet-metal">
+        <div>Sheet Metal</div>
+      </a>
+      <a href="/fabrication">
+        <div>Fabrication</div>
+      </a>
+      <a href="/welding">
+        <div>Welding</div>
+      </a>
+      <a href="/engraving-&-marking">
+        <div>Engraving & Marking</div>
+      </a>
     </div>
 
     <div id="myNav" class="overlay">
@@ -60,9 +96,36 @@ const close = () => {
             <div @click="close" class="my-1">About Us</div>
           </router-link>
           <div class="bg-[#B0B0B0] h-[1px] my-4"></div>
-          <router-link to="/services">
-            <div @click="close" class="my-1">Services</div>
-          </router-link>
+          <!-- <router-link to="/services"> -->
+          <div @click="switchServices" class="my-1 flex justify-between">Services
+            <img class="w-4 my-auto " src="../assets/dropdown.png" alt="">
+
+          </div>
+          <!-- </router-link> -->
+
+          <div v-if="services" @mouseleave="switchServices" class="w-full mt-4 text-lg bg-white">
+            <a  href="/cnc-milling">
+              <div class="my-2">CNC Milling</div>
+            </a>
+            <a href="/cnc-turning">
+              <div class="my-2">CNC Turning</div>
+            </a>
+            <a href="/sliding-head">
+              <div class="my-2">Sliding Head</div>
+            </a>
+            <a href="/sheet-metal">
+              <div class="my-2">Sheet Metal</div>
+            </a>
+            <a href="/fabrication">
+              <div class="my-2">Fabrication</div>
+            </a>
+            <a href="/welding">
+              <div class="my-2">Welding</div>
+            </a>
+            <a href="/engraving-&-marking">
+              <div class="my-2">Engraving & Marking</div>
+            </a>
+          </div>
           <div class="bg-[#B0B0B0] h-[1px] my-4"></div>
           <router-link to="/markets">
             <div @click="close" class="my-1">Markets</div>
