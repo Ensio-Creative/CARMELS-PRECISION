@@ -134,8 +134,8 @@ document.title = "Home | Precision and Fabrication Services";
         <img class="w-12 h-12" src="../assets/check.png" alt="" />
         <div class="font-bold my-2">Guaranteed Quality</div>
         <div>
-          We are dedicated to delivering excellent quality and reliability
-          across our business and are accredited to ISO:9001.
+          We are dedicated to delivering excellent quality and reliability across our business and are certified to
+          ISO:9001.
         </div>
       </div>
     </div>

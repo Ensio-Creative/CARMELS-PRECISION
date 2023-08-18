@@ -14,7 +14,7 @@
     <div class="bg-black w-full absolute top-0 opacity-40 overlay"></div>
     <div class="
         absolute
-        lg:top-52
+        lg:top-72
         top-40
         lg:w-1/2 lg:left-20
         right-6

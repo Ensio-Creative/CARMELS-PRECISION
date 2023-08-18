@@ -20,12 +20,12 @@ const close = () => {
 </script>
 
 <template>
-  <div :class="position > 550 ?
-    'flex lg:w-[90%] flex-wrap mx-auto left-0 right-0 fixed lg:px-20 px-4 z-30 top-0 justify-between px-3 py-6 bg-white text-[#0E1E43] header' :
-    'flex w-full flex-wrap fixed lg:px-20 px-4 z-30 top-0 text-white  justify-between py-4 px-3'">
+  <div
+    class="
+    flex lg:w-[90%] flex-wrap mx-auto left-0 right-0 fixed lg:px-20 px-4 z-30 top-0 justify-between px-3 py-6 bg-white text-[#0E1E43] header">
     <router-link to="/">
-      <img v-if="position < 550" src="../assets/logo.svg" class="lg:w-80 w-52" alt="" />
-      <img v-else src="../assets/logo-color.svg" class="lg:w-80 w-52" alt="" />
+      <!-- <img v-if="position < 550" src="../assets/logo.svg" class="lg:w-80 w-52" alt="" /> -->
+      <img src="../assets/logo-color.svg" class="lg:w-80 w-52" alt="" />
     </router-link>
     <div class="lg:flex justify-between w-2/5 my-auto hidden">
       <router-link to="/">
@@ -35,8 +35,8 @@ const close = () => {
         <div>About Us</div>
       </router-link>
       <!-- <router-link to="/services"> -->
-      <div @mouseenter="switchServices" class="flex">Services
-        <img class="w-auto my-auto mt-2 ml-2" src="../assets/dropdown.png" alt="">
+      <div @mouseenter="switchServices" class="flex cursor-pointer">Services
+        <img class="w-auto my-auto mt-2 ml-2" src="../assets/dropdown.svg" alt="">
       </div>
       <!-- </router-link> -->
       <router-link to="/markets">
@@ -49,15 +49,15 @@ const close = () => {
         <img class="mx-3" src="../assets/Britain.svg" alt="" />
       </div>
     </div>
-    <div class="lg:hidden block my-auto">
+    <!-- <div class="lg:hidden block my-auto">
       <img @click="toggle" src="../assets/bar.png" alt="" />
-    </div>
-    <div v-if="position > 550" class="lg:hidden block my-auto">
+    </div> -->
+    <div class="lg:hidden block my-auto">
       <img @click="toggle" src="../assets/blue-bar.png" alt="" />
     </div>
 
     <div v-if="services" @mouseleave="switchServices"
-      class="w-full header mt-4 lg:flex hidden justify-around text-sm text-black bg-white p-3">
+      class="w-full header mt-4 lg:flex hidden justify-around text-sm text-[#0E1E43] bg-white p-3">
       <a href="/cnc-milling">
         <div>CNC Milling</div>
       </a>
@@ -79,6 +79,12 @@ const close = () => {
       <a href="/engraving-&-marking">
         <div>Engraving & Marking</div>
       </a>
+      <a href="/engraving-&-marking">
+        <div class="my-2">Quality Control</div>
+      </a>
+      <a href="/engraving-&-marking">
+        <div class="my-2">Finishing</div>
+      </a>
     </div>
 
     <div id="myNav" class="overlay">
@@ -98,13 +104,13 @@ const close = () => {
           <div class="bg-[#B0B0B0] h-[1px] my-4"></div>
           <!-- <router-link to="/services"> -->
           <div @click="switchServices" class="my-1 flex justify-between">Services
-            <img class="w-4 my-auto " src="../assets/dropdown.png" alt="">
+            <img class="w-4 my-auto " src="../assets/dropdown.svg" alt="">
 
           </div>
           <!-- </router-link> -->
 
-          <div v-if="services" @mouseleave="switchServices" class="w-full mt-4 text-lg bg-white">
-            <a  href="/cnc-milling">
+          <div v-if="services" @mouseleave="switchServices" class="w-full mt-4 text-lg text-[#0E1E43]">
+            <a href="/cnc-milling">
               <div class="my-2">CNC Milling</div>
             </a>
             <a href="/cnc-turning">
@@ -125,6 +131,12 @@ const close = () => {
             <a href="/engraving-&-marking">
               <div class="my-2">Engraving & Marking</div>
             </a>
+            <a href="/engraving-&-marking">
+              <div class="my-2">Quality Control</div>
+            </a>
+            <a href="/engraving-&-marking">
+              <div class="my-2">Finishing</div>
+            </a>
           </div>
           <div class="bg-[#B0B0B0] h-[1px] my-4"></div>
           <router-link to="/markets">
@@ -138,29 +150,6 @@ const close = () => {
             <img class="w-32 mt-20" src="../assets/Britain.svg" alt="" />
           </div>
         </div>
-        <!-- <div class="p-4 text-[#C3C3C3] relative bottom-0">
-          <a href="/cnc-milling">
-            <div @click="close">CNC Milling</div>
-          </a>
-          <a href="/cnc-turning">
-            <div @click="close">CNC Turning</div>
-          </a>
-          <a href="/sliding-head">
-            <div @click="close">Sliding Head</div>
-          </a>
-          <a href="/sheet-metal">
-            <div @click="close">Sheet Metal</div>
-          </a>
-          <a href="/fabrication">
-            <div @click="close">Fabrication</div>
-          </a>
-          <a href="/welding">
-            <div @click="close">Welding</div>
-          </a>
-          <a href="/engraving-&-marking">
-            <div @click="close">Engraving & Marking</div>
-          </a>
-        </div> -->
       </div>
     </div>
   </div>
