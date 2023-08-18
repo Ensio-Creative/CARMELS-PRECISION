@@ -23,7 +23,7 @@ document.title = "Home | Precision and Fabrication Services";
         </router-link>
       </div>
       <div class="flex m-6">
-        <div class="relative">
+        <div class="relative lg:right-0 right-1">
           <img class="m-1" src="../assets/Mask-group.png" alt="" />
           <router-link to="/cnc-milling">
             <div class="
