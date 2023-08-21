@@ -25,9 +25,9 @@ const close = () => {
     flex lg:w-[90%] flex-wrap mx-auto left-0 right-0 fixed lg:px-20 px-4 z-30 top-0 justify-between px-3 py-6 bg-white text-[#0E1E43] header">
     <router-link to="/">
       <!-- <img v-if="position < 550" src="../assets/logo.svg" class="lg:w-80 w-52" alt="" /> -->
-      <img src="../assets/logo-color.svg" class="lg:w-80 w-52" alt="" />
+      <img src="../assets/logo-color.svg" class="lg:w-72 w-52" alt="" />
     </router-link>
-    <div class="lg:flex justify-between w-2/5 my-auto hidden">
+    <div class="lg:flex justify-between w-[50%] my-auto hidden">
       <router-link to="/">
         <div>Home</div>
       </router-link>
@@ -80,10 +80,10 @@ const close = () => {
         <div>Engraving & Marking</div>
       </a>
       <a href="/engraving-&-marking">
-        <div class="my-2">Quality Control</div>
+        <div class="">Quality Control</div>
       </a>
       <a href="/engraving-&-marking">
-        <div class="my-2">Finishing</div>
+        <div class="">Finishing</div>
       </a>
     </div>
 
@@ -109,7 +109,7 @@ const close = () => {
           </div>
           <!-- </router-link> -->
 
-          <div v-if="services" @mouseleave="switchServices" class="w-full mt-4 text-lg text-[#0E1E43]">
+          <div v-if="services" @mouseleave="switchServices" class="w-full mt-1 text-lg text-[#0E1E43]">
             <a href="/cnc-milling">
               <div class="my-2">CNC Milling</div>
             </a>

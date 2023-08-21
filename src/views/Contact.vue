@@ -57,9 +57,9 @@ const handleFormSubmit = (e) => {
 <template>
   <div>
     <div class="bg-[#0E1E43] text-white text-center lg:p-44 py-44 height">
-      <div class="lg:w-2/5 mx-auto">
+      <div class="lg:w-1/2 mx-auto">
         <div class="lg:text-8xl text-5xl font-bold">Contact</div>
-        <div class="lg:px-0 px-8">
+        <div class="lg:px-0 px-8 lg:py-10">
           Whether you have questions, need feedback or a quotation,
           we would love to hear from you. Contact us today and we
           will be respond to you as soon as we can.
@@ -84,7 +84,7 @@ const handleFormSubmit = (e) => {
         <textarea class="border-b border-[#C3C3C3] w-full p-2 h-32 my-2" placeholder="Message"
           v-model="message"></textarea>
       </div>
-      <div class="lg:flex lg:w-2/3 justify-evenly my-4 mx-auto">
+      <div class="lg:flex  justify-evenly my-4 mx-auto">
         <div class="text-center">(Optional) Upload document</div>
         <input class="mx-auto w-2/3" type="file" />
       </div>
