@@ -28,15 +28,15 @@
         We provide a complete CNC machining and fabrications with the best of
         technology across a range of industry.
       </div>
-      <div class="flex">
+      <div class="flex uppercase">
         <router-link to="/about">
-          <div class=" text-lg bg-[#EE3C23] p-2">
+          <div class=" text-sm bg-[#EE3C23] p-3">
             Learn More
             <!-- <img src="../assets/Arrow1.png" class="h-2 my-auto mx-3" alt="" /> -->
           </div>
         </router-link>
         <router-link to="/contact">
-          <div class="ml-5 text-lg bg-[#EE3C23] p-2">
+          <div class="ml-5 text-sm bg-[#EE3C23] p-3">
             Request a Quote
           </div>
         </router-link>

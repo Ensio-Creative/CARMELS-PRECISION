@@ -84,9 +84,9 @@ const handleFormSubmit = (e) => {
         <textarea class="border-b border-[#C3C3C3] w-full p-2 h-32 my-2" placeholder="Message"
           v-model="message"></textarea>
       </div>
-      <div class="lg:flex  justify-evenly my-4 mx-auto">
+      <div class="lg:flex justify-evenly my-4 mx-auto">
         <div class="text-center">(Optional) Upload document</div>
-        <input class="mx-auto w-2/3" type="file" />
+        <input class="mx-auto w-[75%]" type="file" />
       </div>
       <div>
         <input @click="handleFormSubmit(e)" type="button" class="w-full bg-[#0E1E43] text-white p-3 my-2"

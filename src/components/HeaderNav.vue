@@ -29,21 +29,21 @@ const close = () => {
     </router-link>
     <div class="lg:flex justify-between w-[50%] my-auto hidden">
       <router-link to="/">
-        <div>Home</div>
+        <div class="mt-2">Home</div>
       </router-link>
       <router-link to="/about">
-        <div>About Us</div>
+        <div class="mt-2">About Us</div>
       </router-link>
       <!-- <router-link to="/services"> -->
-      <div @mouseenter="switchServices" class="flex cursor-pointer">Services
+      <div @mouseenter="switchServices" class="flex cursor-pointer mt-2">Services
         <img class="w-auto my-auto mt-2 ml-2" src="../assets/dropdown.svg" alt="">
       </div>
       <!-- </router-link> -->
       <router-link to="/markets">
-        <div>Markets</div>
+        <div class="mt-2">Markets</div>
       </router-link>
       <router-link to="/contact">
-        <div>Contact us</div>
+        <div class="mt-2">Contact us</div>
       </router-link>
       <div>
         <img class="mx-3" src="../assets/Britain.svg" alt="" />
@@ -156,6 +156,7 @@ const close = () => {
 </template>
 
 <style scoped>
+
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
