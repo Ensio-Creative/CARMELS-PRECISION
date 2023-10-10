@@ -23,10 +23,11 @@ document.title = "Home | Precision and Fabrication Services";
         </router-link>
       </div>
       <div class="flex m-6">
-        <div class="relative lg:right-0 right-1">
-          <img class="m-1" src="../assets/Mask-group.png" alt="" />
-          <router-link to="/cnc-milling">
-            <div class="
+        <div>
+          <div class="relative lg:right-0 right-1">
+            <router-link to="/cnc-milling">
+              <img class="m-1" src="../assets/milling.png" alt="" />
+              <div class="
                 text-white
                 absolute
                 lg:bottom-5
@@ -37,14 +38,33 @@ document.title = "Home | Precision and Fabrication Services";
                 text-lg
                 font-bold
               ">
-              CNC Milling
-            </div>
-          </router-link>
+                CNC Milling
+              </div>
+            </router-link>
+          </div>
+          <div class="relative lg:right-0 top-1 right-1">
+            <router-link to="/sliding-head">
+              <img class="m-1 h-62" src="../assets/sliding.png" alt="" />
+              <div class="
+                text-white
+                absolute
+                lg:bottom-5
+                bottom-2
+                lg:left-12
+                left-6
+                lg:text-3xl
+                text-lg
+                font-bold
+              ">
+                Sliding Head
+              </div>
+            </router-link>
+          </div>
         </div>
         <div>
           <div class="relative">
-            <img class="m-1" src="../assets/right1.png" alt="" />
             <router-link to="/fabrication">
+              <img class="m-1" src="../assets/right1.png" alt="" />
               <div class="
                   text-white
                   absolute
@@ -61,8 +81,8 @@ document.title = "Home | Precision and Fabrication Services";
             </router-link>
           </div>
           <div class="relative">
-            <img class="m-1 lg:mt-2" src="../assets/right2.png" alt="" />
             <router-link to="/sheet-metal">
+              <img class="m-1 lg:mt-2" src="../assets/right2.png" alt="" />
               <div class="
                   text-white
                   absolute
