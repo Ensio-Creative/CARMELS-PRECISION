@@ -13,7 +13,7 @@
         "image1": "turning.png",
         "slug1": "cnc-milling",
         "slug2": "sliding-head",
-        "text1": "CNC Turning",
+        "text1": "CNC + Multi Pallet 5-Axis Milling",
         "image2": "sliding.png",
         "text2": "Sliding Head"
     },
@@ -31,7 +31,7 @@
         "image1": "milling.png",
         "slug1": "cnc-milling",
         "slug2": "sliding-head",
-        "text1": "CNC Milling",
+        "text1": "CNC + Multi Pallet 5-Axis Milling",
         "image2": "sliding.png",
         "text2": "Sliding Head"
     },
@@ -52,7 +52,7 @@
         "image1": "milling.png",
         "slug1": "cnc-milling",
         "slug2": "cnc-turning",
-        "text1": "CNC Milling",
+        "text1": "CNC + Multi Pallet 5-Axis Milling",
         "image2": "turning.png",
         "text2": "CNC Turning"
     },

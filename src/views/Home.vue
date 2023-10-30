@@ -38,7 +38,8 @@ document.title = "Home | Precision and Fabrication Services";
                 text-lg
                 font-bold
               ">
-                CNC Milling
+                CNC + Multi Pallet
+                5-Axis Milling
               </div>
             </router-link>
           </div>
