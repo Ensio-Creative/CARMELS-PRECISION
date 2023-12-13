@@ -156,7 +156,7 @@ document.title = "Home | Precision and Fabrication Services";
         <div class="font-bold my-2">Guaranteed Quality</div>
         <div>
           We are dedicated to delivering excellent quality and reliability across our business and are certified to
-          ISO:9001.
+          ISO 9001:2015.
         </div>
       </div>
     </div>

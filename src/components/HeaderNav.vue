@@ -79,10 +79,10 @@ const close = () => {
       <a href="/engraving-&-marking">
         <div>Engraving & Marking</div>
       </a>
-      <a href="/engraving-&-marking">
+      <a href="/quality-control">
         <div class="">Quality Control</div>
       </a>
-      <a href="/engraving-&-marking">
+      <a href="/finishing">
         <div class="">Finishing</div>
       </a>
     </div>
@@ -131,10 +131,10 @@ const close = () => {
             <a href="/engraving-&-marking">
               <div class="my-2">Engraving & Marking</div>
             </a>
-            <a href="/engraving-&-marking">
+            <a href="/quality-control">
               <div class="my-2">Quality Control</div>
             </a>
-            <a href="/engraving-&-marking">
+            <a href="/finishing">
               <div class="my-2">Finishing</div>
             </a>
           </div>

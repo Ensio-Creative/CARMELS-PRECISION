@@ -57,7 +57,7 @@
           </a>
         </div>
         <div class="lg:w-52 w-full lg:my-0 my-4 lg:block flex">
-          <div>
+          <!-- <div>
             <div class="font-bold lg:pl-2">SOCIAL MEDIA</div>
             <div class="flex justify-between flex-wrap lg:w-auto w-2/3 lg:-ml-0 -ml-2">
               <img src="../assets/socials/instagram.png" alt="" />
@@ -65,7 +65,7 @@
               <img src="../assets/socials/linkedln.png" alt="" />
               <img src="../assets/socials/facebook.png" alt="" />
             </div>
-          </div>
+          </div> -->
           <div>
             <img class="lg:pl-2 lg:mx-0 mx-auto" src="../assets/Made-in-Britain.svg" alt="" />
           </div>
