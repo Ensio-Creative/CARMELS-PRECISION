@@ -10,13 +10,14 @@ const name = ref("");
 const message = ref("");
 const company = ref("");
 const email = ref("");
+const phone = ref("");
 const loading = ref(false);
 
 const handleFormSubmit = (e) => {
   // e.preventDefault();
   loading.value = true;
 
-  fetch("https://formsubmit.co/ajax/", {
+  fetch("https://formsubmit.co/ajax/sales.uk@carmelsgroup.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -26,6 +27,7 @@ const handleFormSubmit = (e) => {
       name: name.value,
       message: message.value,
       email: email.value,
+      phone: phone.value,
       comapny: company.value,
     }),
   })
@@ -38,6 +40,7 @@ const handleFormSubmit = (e) => {
         email.value = "";
         message.value = "";
         company.value = "";
+        phone.value = "";
         loading.value = false;
       }
     })
@@ -48,6 +51,7 @@ const handleFormSubmit = (e) => {
       email.value = "";
       message.value = "";
       company.value = "";
+      phone.value = "";
       loading.value = false;
     });
 };
@@ -76,6 +80,9 @@ const handleFormSubmit = (e) => {
       </div>
       <div>
         <input type="email" class="border-b border-[#C3C3C3] w-full p-2 my-2" placeholder="Email" v-model="email" />
+      </div>
+       <div>
+        <input type="number" class="border-b border-[#C3C3C3] w-full p-2 my-2" placeholder="Phone Number" v-model="phone" />
       </div>
       <div>
         <input type="text" class="border-b border-[#C3C3C3] w-full p-2 my-2" placeholder="Company" v-model="company" />
